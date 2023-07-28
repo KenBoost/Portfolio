@@ -1,0 +1,23 @@
+/* Estilos para el fondo negro y letras blancas */
+.navbar-dark {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Letras blancas */
+  }
+  
+  /* Estilos para el logo y centrar el contenido del nav */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+  
+  .navbar-brand img {
+    max-height: 40px; /* Tamaño del logo (ajusta según tus necesidades) */
+    /* Puedes agregar más estilos para el logo aquí */
+  }
+  
+  /* Estilos para el botón del toggler en pantallas más pequeñas */
+  .navbar-toggler {
+    border-color: #ffffff; /* Color de borde blanco para el toggler */
+  }
+  
