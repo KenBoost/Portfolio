@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*Header------------------------------------------------------*/
+  .header {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 20px;
+    height: 300px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .header-content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-family: fantasy;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+ 
