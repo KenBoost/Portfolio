@@ -20,7 +20,7 @@
     </a>
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a  class="nav-link" href="index.html">Home</a>
+        <a  class="nav-link" href="index.html">Portfolio</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Projects</a>
@@ -42,7 +42,7 @@
     <input type="radio" name="slider" id="item-3">
   <div class="cards">
     <label class="card" for="item-1" id="song-1">
-      <img src="assets/images/songs/Shallou.jpg" alt="song">
+      <img src="assets/images/songs/kygo.jpeg" alt="song">
     </label>
     <label class="card" for="item-2" id="song-2">
       <img src="assets/images/songs/1975.jpg" alt="song">
@@ -52,41 +52,42 @@
     </label>
   </div>
   <div class="player">
-    <div class="upper-part">
-      <div class="play-icon">
-        <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
-          <defs/>
-          <path d="M5 3l14 9-14 9V3z"/>
-        </svg>
+    <div class="player">
+      <div class="upper-part">
+        <div class="play-icon">
+          <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+            <defs/>
+            <path d="M5 3l14 9-14 9V3z"/>
+          </svg>
+        </div>
+        <div class="info-area" id="test">
+          <label class="song-info" id="song-info-1">
+            <div class="title">Never really loved me</div>
+            <div class="sub-line">
+              <div class="subtitle">Kygo</div>
+              <div class="time">3.22</div>
+            </div>
+          </label>
+          <label class="song-info" id="song-info-2">
+            <div class="title">Robbers</div>
+            <div class="sub-line">
+              <div class="subtitle">The 1975</div>
+              <div class="time">4.14</div>
+            </div>
+          </label>
+          <label class="song-info" id="song-info-3">
+            <div class="title">Ipad</div>
+            <div class="sub-line">
+              <div class="subtitle">Chainsmokers</div>
+              <div class="time">3.52</div>
+            </div>
+          </label>
+        </div>
       </div>
-      <div class="info-area" id="test">
-        <label class="song-info" id="song-info-1">
-          <div class="title">See You</div>
-          <div class="sub-line">
-            <div class="subtitle">Shallou</div>
-            <div class="time">4.43</div>
-          </div>
-        </label>
-        <label class="song-info" id="song-info-2">
-          <div class="title">Robbers</div>
-          <div class="sub-line">
-            <div class="subtitle">The 1975</div>
-            <div class="time">4.14</div>
-          </div>
-        </label>
-        <label class="song-info" id="song-info-3">
-          <div class="title">Ipad</div>
-          <div class="sub-line">
-            <div class="subtitle">Chainsmokers</div>
-            <div class="time">3.52</div>
-          </div>
-        </label>
+      <div class="progress-bar">
+        <span class="progress"></span>
       </div>
     </div>
-    <div class="progress-bar">
-      <span class="progress"></span>
-    </div>
-  </div>
 </div>
 </div>
 
@@ -98,6 +99,21 @@
   
   <!---------------------------------------------------------------------------->
   <script src="js/bootstrap.min.js"></script>
+
+   <!--Reproducir las canciones-->
+  <script>
+    function togglePlay(songId) {
+      const songInfo = document.getElementById(songId);
+      const audioElement = new Audio(songInfo.getAttribute('data-src'));
+  
+      if (audioElement.paused) {
+        audioElement.play();
+      } else {
+        audioElement.pause();
+      }
+    }
+  </script>
+  
 </body>
 
 </html>
